@@ -1,6 +1,6 @@
 K=gcc
 L=-c
-listing=3.3
+listing=3.6
 path=/home/alex/Desktop/tp/src/listing$(listing)
 path2=/home/alex/Desktop/tp/build/listing$(listing)
 
