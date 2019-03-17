@@ -1,0 +1,9 @@
+/home/alex/Desktop/tp/srcK=gcc
+L=-c -Wall
+
+main: main.o
+	$(K) main.o -o main
+main.o: main.c
+	$(K) $(L) main.c
+clean:
+	rm *.o main
