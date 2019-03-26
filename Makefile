@@ -1,15 +1,20 @@
+SUBDIRS= $(shell ls -d src/*/)
+BUILD= $(shell ls -d build/*/)
+
 K=gcc
 L=-c
-listing=3.7
-path=/home/alex/Desktop/tp/src/listing$(listing)
-path2=/home/alex/Desktop/tp/build/listing$(listing)
 
-main: $(path)/main.o
-	$(K) $(path)/main.o -o $(path2)/main
-main.o: $(path)/main.c
-	$(K) $(L) $(path)/main.c
-cleanObjects:
-	rm /home/alex/Desktop/tp/src/listing$(listing)/main.o
-cleanExecutables:
-	rm /home/alex/Desktop/tp/build/listing$(listing)/main
+.PHONY: all clean $(SUBDIRS)
 
+all:	$(SUBDIRS)
+
+$(SUBDIRS):
+	for dir in $(SUBDIRS); do\
+		cd $@; $(K) $(L) main.c ;\
+		$(K) main.o -o main;\
+	done
+
+clean:
+	for subdir in $(SUBDIRS); do\
+		(cd $${subdir}; $(MAKE) $@);\
+	done
