@@ -8,7 +8,7 @@
 ###
 OBJECTS  	= 	readfile.o temp_file.o test.o
 LIBRARIES 	= 	libtest.a libtest.so
-PROGRAMS 	=	app arglist client getopt_long print-env 
+PROGRAMS 	=	app arglist client getopt_long print-env tifftest
 
 .PHONY: all clean
 
