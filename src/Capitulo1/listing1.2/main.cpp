@@ -8,7 +8,7 @@
 
 #include <iostream>
 #include <cassert>
-#include "reciprocal.hpp"
+#include "main.hpp"
 
 double reciprocal(int i){
   //I should be non-zero
