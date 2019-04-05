@@ -10,7 +10,7 @@
 #ifdef __cplusplus
 extern "C"{
 #endif
-  extern double reciprocal(int i);
+  extern double main(int i);
   #ifdef __cplusplus
 }
 #endif
