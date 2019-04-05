@@ -9,13 +9,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "main.hpp"
+#include "reciprocal.hpp"
 
 int main(int argc, char **argv){
   int i;
   int a;
   i = atoi(argv[1]);
-  printf("the reciprocal of %d is %g\n", i,main(i));
+  printf("the reciprocal of %d is %g\n", i,reciprocal(i));
   return 0;
   
 }
