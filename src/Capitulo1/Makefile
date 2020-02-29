@@ -3,7 +3,7 @@
  #Integrantes:
  #@Miryam Godoy
  #@Alex Gomez
-###
+###Modificacion para tarea de Sistemas Distribuidos
 
 
 reciprocal: main.o reciprocal.o
